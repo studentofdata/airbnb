@@ -45,8 +45,8 @@ class airbnbCollector(CrawlSpider):
 		property_site['S_Bathrooms']   = sel.xpath('//strong[contains(@data-reactid, "Bathrooms=2.2")]/text()').extract()
 		property_site['S_Numbeds']     = sel.xpath('//strong[contains(@data-reactid, "Beds=2.2")]/text()').extract()
 		property_site['S_Bedtype']	   = sel.xpath('//strong[contains(@data-reactid, "Bed type=2.2")]/text()').extract()
-		property_site['S_Checkin']	   = sel.xpath('//strong[contains(@data-reactid, "Check Out=2.2")]/text()').extract()
-		property_site['S_Checkout']	   = sel.xpath('//strong[contains(@data-reactid, "Check In=2.2")]/text()').extract()
+		property_site['S_Checkin']	   = sel.xpath('//strong[contains(@data-reactid, "Check In=2.2")]/text()').extract()
+		property_site['S_Checkout']	   = sel.xpath('//strong[contains(@data-reactid, "Check Out=2.2")]/text()').extract()
 
 
 		property_site['A_Availability'] = sel.xpath('//div[@class = "col-md-6"]/strong/text()').extract()
